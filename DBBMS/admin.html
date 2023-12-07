@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | BBank</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./mdb.min.css">
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body class="bg-dark text-light">
+    <div class="body pb-2" id="body"  class="text-center">
+        <!-- style="height: 790px;" -->
+
+        <!-- Navbar -->
+        <nav class="navbar text-light px-5 shadow-none">
+            <!-- Site Name -->
+            <div class="logo navbar-brand text-light bold " style="font-size: 25px;"><span class="red">Blood</span>Bank</div>
+
+            <!-- Page navigation -->
+            <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item px-3"><a href="./index.html" class="nav-link py-1 text-light hover-bold">Home</a></li>
+                <li class="nav-item px-3"><a href="./login.html" class="nav-link py-1 text-light hover-bold">Accounts</a></li>
+                <li class="nav-item px-3"><a href="https://www.who.int/campaigns/world-blood-donor-day/2018/who-can-give-blood" class="nav-link py-1 text-light hover-bold">Who can Donate?</a></li>
+            </ul>
+
+            <!--  -->
+            <img src="./Flag_of_the_Red_Cross.png" alt="pp" class=" rounded-circle" width="50px">
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col main-left text-light rounded-5 my-2 me-2 p-3" style="background: #2B2D42;">
+                    <div class="display-4 bold">Regional Hospital Limbe</div>
+                    <div class="display-1 text-center red"><i class="fa-solid fa-plus"></i></div>
+                    <a href="./donorTable.html"><button id="vwDonors" class="btn btn-red text-end my-3">View Donors</button></a>
+                </div>
+                <div class="col apps">
+                    <div class="row bg-light text-dark rounded-5 my-2 p-3">
+                        <div id="ctSc" class="d-flex justify-content-between">   
+                            <div class="display-6">Requests</div>
+                            <button id="createReq" class="btn p-2 my-1" style="background: #2B2D42; color: white;">Create Request</button>
+                        </div>
+                        <div id="ctSec"></div>
+                        <hr>
+                        <ul id="requests">
+                            <li id="noReq" hidden>You haven't requested yet</li>
+                        </ul>
+                    </div>
+                    <div class="row bg-light text-dark rounded-5 my-2 p-3">
+                        <div class="display-6">Appointments</div>
+                        <hr>
+                        <ul id="appointments">
+                            <li id="noApp" hidden>No appointments have been set yet</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row bg-light text-dark rounded-5">
+                <form id="form" action="submit" class="card px-5 py-2">
+                    <div class="big bold font text-center my-3">ADD A BLOOD DONOR</div>
+                    <div class="fields w-100">
+                        <div class="d-flex">
+                            <input id="name" type="text" placeholder="Full name" class="w-75 border-0 bg-dark bg-opacity-25 rounded-5 px-3 py-1 my-2 me-1" required>
+                            <input id="gender" type="text" placeholder="Gender" class=" w-25 border-0 bg-dark bg-opacity-25 rounded-5 px-3 py-1 my-2" required>
+                        </div>
+                        
+                        <div class="d-flex">
+                            <input id="tel" type="tel" placeholder="Contact" class="w-50 border-0 bg-dark bg-opacity-25 rounded-5 px-3 py-1 my-2 me-1" required>
+                            <input id="address" type="text" placeholder="Address" class="w-50 border-0 bg-dark bg-opacity-25 rounded-5 px-3 py-1 my-2" required>
+                        </div>
+                        
+                        <div class="d-flex">
+                            <input id="group" type="text" placeholder="Blood Group & Rhesus" class=" w-50 border-0 bg-dark bg-opacity-25 rounded-5 px-3 py-1 my-2 me-2" required>
+                            <label for="dob">Date of Birth:</label>
+                            <input id="dob" type="date" placeholder="Date of Birth" class="w-25 border-0 bg-dark bg-opacity-25 rounded-5 px-3 py-1 my-2 me-2" required>
+                            <label for="ld">Last Donation:</label>
+                            <input id="ld" type="date" placeholder="Last donation" class="w-25 border-0 bg-dark bg-opacity-25 rounded-5 px-3 py-1 my-2" required>
+                        </div>
+                    </div>
+
+                    <div class="text-center"><button type="submit" id="btn1" class="btn btn-dark py-3 w-auto m-3" style="background: red;">Submit Donor data</button></div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+    <script src="./mdb.min.js"></script>
+    <script src="./admin.js"></script>
+</body>
+</html>

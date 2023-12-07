@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor acc | BBank</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./mdb.min.css">
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body class="bg-dark text-light">
+    <div class="body" id="body" style="height: 720px;" class="text-center">
+
+        <!-- Navbar -->
+        <nav class="navbar text-light px-5 shadow-none">
+            <!-- Site Name -->
+            <div class="logo navbar-brand text-light bold " style="font-size: 25px;"><span class="red">Blood</span>Bank</div>
+
+            <!-- Page navigation -->
+            <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item px-3"><a href="./index.html" class="nav-link py-1 text-light hover-bold">Home</a></li>
+                <li class="nav-item px-3"><a href="./login.html" class="nav-link py-1 text-light hover-bold">Accounts</a></li>
+                <li class="nav-item px-3"><a href="https://www.who.int/campaigns/world-blood-donor-day/2018/who-can-give-blood" class="nav-link py-1 text-light hover-bold">Who can Donate?</a></li>
+            </ul>
+
+            <!--  -->
+            <img src="/Head.jpg" alt="pp" class=" rounded-circle" width="50px">
+        </nav>
+
+        <div class="container bg-light rounded-9 p-5 my-3">
+            <div class="red big bolder">DASHBOARD</div>
+            <div class="row justify-content-center">
+                <div class="col-5 p-0">
+                    <div class="row bg-dark bg-opacity-25 text-dark p-4 m-4 rounded-9 ">
+                        <div class="profile d-flex">
+                            <div><img src="./Head.jpg" alt="pic" width="100" class="rounded-circle"></div>
+                            <div class="fName bold big m-3">Donovan G. Mitchell</div>
+                        </div>
+                        <div class="sex">Sex: Male</div>
+                        <div class="id">Id: 12345678</div>
+                    </div>
+                    <div class="row p-4 m-4 rounded-9" style="background: #8D99AE;">
+                        <div class="display-6 m-3 text-center bold">Info.</div>
+                        <div class="bt">Blood type: O-</div>
+                        <div class="age">Age: 25</div>
+                        <div class="ld">Lastly donated on: 23-12-2022</div>
+                    </div>
+                </div>
+                <div class="col-5 p-5 m-4 rounded-9 d-flex flex-column" style="background: #2B2D42;">
+                    <h2 class="display-6 bold text-center">Appointments</h2>
+                    <ul id="appointments" class="text-light-opacity-50">
+                        <li id="noApp" class="" hidden>...No pending appointments</li>
+                    </ul>
+                    <div id="addApps" class="bg-opacity-75 rounded-8 text-light p-1" style="background: transparent;"></div>
+                    <div class=" text-center pt-5" ><button type="button" id="appBtn" class="btn btn-red bolder text-center"><i class="fa-solid fa-plus"></i> Create</button></div>
+                    <!-- style="margin-top: 15px;" -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+   
+    <script src="./mdb.min.js"></script>
+   <script src="donor.js"></script>
+</body>
+</html>
